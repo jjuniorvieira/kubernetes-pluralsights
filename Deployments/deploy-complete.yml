@@ -1,4 +1,5 @@
 # Simple deployment used to deploy and manage the app in nigelpoulton/ps-web:1.0
+# labels (app: web) labels are pretty important to make the load balance 
 apiVersion: apps/v1
 kind: Deployment
 metadata:

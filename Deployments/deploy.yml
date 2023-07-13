@@ -2,6 +2,8 @@
 # deploy has wraps pod, pod wraps app
 # this file is a manisfest declarative model to have  desire state
 # labels (app: web) labels are pretty important to make the load balance 
+# deployment wraps (pods) pods, pods wraps container, container contains 
+# 5 replicas means 5 pods
 apiVersion: apps/v1
 kind: Deployment
 metadata:

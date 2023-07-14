@@ -1,4 +1,4 @@
 # kubernetes-pluralsights
 
-## getting kubernetes
-kubectl used to manage clusters
+- getting kubernetes
+    - kubectl used to manage clusters

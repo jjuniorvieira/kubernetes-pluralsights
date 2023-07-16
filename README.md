@@ -4,4 +4,4 @@
     - kubectl used to manage clusters
     - cloud providers
         - linode 
-        - google cloud 'gcloud auth login'
+        - google cloud `gcloud auth login`

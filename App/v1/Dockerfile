@@ -1,3 +1,4 @@
+# build up app into a container
 FROM node:current-slim
 
 LABEL MAINTAINER=nigelpoulton@hotmail.com

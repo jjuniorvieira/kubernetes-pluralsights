@@ -1,14 +1,14 @@
 # Simple Kubernetes Pod to deploy the app contained in nigelpoulton/getting-started-k8s:1.0
 # labels (app: web) labels are pretty important to make the load balance 
-apiVersion: v1
-kind: Pod
+apiVersion: v1 #apps/v1 apps/v1alpha1; batch/v1beta1; core/v1; extensions/v1beta1; policy/v1beta1; rbac/v1beta1; storage/v1beta1
+kind: Pod # Pod, ReplicationController, ReplicaSet, Deployment, DaemonSet, StatefulSet, Job, CronJob are all objects
 metadata:
-  name: hello-pod
-  labels:
+  name: hello-pod 
+  labels: # key value pairs
     app: web
 spec:
   containers:
     - name: web-ctr
-      image: nigelpoulton/getting-started-k8s:1.0
+      image: nigelpoulton/getting-started-k8s:1.0 #juniorhc/getting-started-k8s:1.0 from docker hub
       ports:
         - containerPort: 8080

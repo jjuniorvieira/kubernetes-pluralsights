@@ -18,3 +18,4 @@
 - `kubectl get pods --watch`
 - `kubectl get pods -o wide`
 - `kubectl describe pods hello-pod`
+- `kubectl delete -f multi-pod.yml`

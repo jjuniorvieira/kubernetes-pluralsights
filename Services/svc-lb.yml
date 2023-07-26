@@ -11,4 +11,4 @@ spec:
   - port: 80
     targetPort: 8080
   selector:
-    app: web
+    app: web # this is the pod label name; this match the pod name 

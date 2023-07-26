@@ -1,3 +1,4 @@
+# multi-container pod with nginx and nginx-prometheus-exporter
 apiVersion: v1
 kind: Pod
 metadata:

@@ -2,7 +2,7 @@
 # Listens externally on 80 and forwards to Pod/container on 8080
 # the job service is high-level stable abstraction point for multiple pods. it provide basically load balance 
 apiVersion: v1
-kind: Service
+kind: Service # connect direct to the IP pod is not reliable, that’s why we need services
 metadata:
   name: ps-lb
 spec:

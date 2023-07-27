@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: ps-nodeport
 spec:
-  type: NodePort
+  type: NodePort # ClusterIP, NodePort, LoadBalancer
   ports:
   - port: 80
     targetPort: 8080

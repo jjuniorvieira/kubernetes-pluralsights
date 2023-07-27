@@ -17,6 +17,7 @@
 - `kubectl apply -f pod.yml` deploy a pod into a cluster
 - `kubectl get pods --watch`
 - `kubectl get pods -o wide`
+- `kubectl get pods --show-labels`
 - `kubectl describe pods hello-pod`
 - `kubectl delete -f multi-pod.yml`
 - `kubectl expose pod hello-pod --name=hello-svc --target-port=8080 --type=NodePort` expose a service NodePort type

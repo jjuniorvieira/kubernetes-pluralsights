@@ -20,6 +20,8 @@
 - `kubectl get pods --show-labels`
 - `kubectl describe pods hello-pod`
 - `kubectl delete -f multi-pod.yml`
+- `kubectl apply -f svc-nodeport.yml`
 - `kubectl expose pod hello-pod --name=hello-svc --target-port=8080 --type=NodePort` expose a service NodePort type
 - `kubectl get services`
 - `kubectl delete svc hello-svc` delete svc object
+- `kubectl describe svc ps-nodeport`

@@ -6,7 +6,7 @@ kind: Service # connect direct to the IP pod is not reliable, that’s why we ne
 metadata:
   name: ps-lb
 spec:
-  type: LoadBalancer
+  type: LoadBalancer # this is the type of service, when we use load balancer, we can use as external IP. No need to use node port
   ports:
   - port: 80
     targetPort: 8080

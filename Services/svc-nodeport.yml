@@ -5,9 +5,9 @@ metadata:
 spec:
   type: NodePort # ClusterIP, NodePort, LoadBalancer
   ports:
-  - port: 80
-    targetPort: 8080
-    nodePort: 31111
+  - port: 80 # this is the port that the service is listening inside the cluster
+    targetPort: 8080 # this is the port that the pod is listening inside the container
+    nodePort: 31111 # this is the port that the service is listening outside the cluster. external port
     protocol: TCP
   selector:
     app: web

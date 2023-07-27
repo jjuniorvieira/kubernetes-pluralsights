@@ -21,3 +21,4 @@
 - `kubectl delete -f multi-pod.yml`
 - `kubectl expose pod hello-pod --name=hello-svc --target-port=8080 --type=NodePort` expose a service NodePort type
 - `kubectl get services`
+- `kubectl delete svc hello-svc` delete svc object

@@ -4,26 +4,26 @@
 # labels (app: web) labels are pretty important to make the load balance 
 # deployment wraps (pods) pods, pods wraps container, container contains 
 # 5 replicas means 5 pods
-apiVersion: apps/v1 # v1alpha1, v1beta1, v1beta2 
+apiVersion: apps/v1 # v1alpha1, v1beta1, v1beta2 # from this line until template is the deployment ⬇️ ⬇️ ⬇️
 kind: Deployment # responsible for self-healing, scaling, rolling updates, and rollbacks
 metadata:
   name: web-deploy
   labels:
     app: web
 spec:
-  replicas: 5
+  replicas: 5 # 5 pods this image here: nigelpoulton/getting-started-k8s:1.0
   selector:
     matchLabels:
-      app: web
-  template:
+      app: web # this is the pod label name; this match the pod name
+  template: # from this line until containers is the pod ⬇️ ⬇️ ⬇️
     metadata:
       labels:
         app: web
     spec: 
-      terminationGracePeriodSeconds: 1
-      containers:
+      terminationGracePeriodSeconds: 1 
+      containers: # from this line until imagePullPolicy is container ⬇️ ⬇️ ⬇️
       - name: hello-pod
         image: nigelpoulton/getting-started-k8s:1.0
-        imagePullPolicy: Always
+        imagePullPolicy: Always # Always pull the image from the registry
         ports:
         - containerPort: 8080

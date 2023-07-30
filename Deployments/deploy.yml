@@ -11,7 +11,7 @@ metadata:
   labels:
     app: web
 spec:
-  replicas: 5 # 5 pods this image here: nigelpoulton/getting-started-k8s:1.0
+  replicas: 5 # 5 pods this image here: nigelpoulton/getting-started-k8s:1.0 #self-healing will be responsible for keep 5 pods running
   selector:
     matchLabels:
       app: web # this is the pod label name; this match the pod name

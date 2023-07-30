@@ -28,3 +28,4 @@
 - `kubectl describe svc ps-nodeport`
 - `kubectl get deploy` check it out deployment status
 - `kubectl get rs` check it out replica set status
+- `kubectl get ep` list of endpoint

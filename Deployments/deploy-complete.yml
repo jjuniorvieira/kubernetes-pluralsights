@@ -13,7 +13,7 @@ spec:
     matchLabels:
       app: web
   replicas: 5
-  minReadySeconds: 5
+  minReadySeconds: 5 # this is the time to wait until the pod is ready - related to rolling update and rollback
   strategy:
     type: RollingUpdate
     rollingUpdate:

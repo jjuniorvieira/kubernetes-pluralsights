@@ -31,3 +31,4 @@
 - `kubectl get ep` list of endpoint
 - `kubectl rollout status deploy web-deploy` check rollout/update status
 - `kubectl rollout history deploy web-deploy` check rollout/update history 
+- `kubectl rollout undo deploy web-deploy --to-revision=1` rollback to specific revision, higher the revision number new it is

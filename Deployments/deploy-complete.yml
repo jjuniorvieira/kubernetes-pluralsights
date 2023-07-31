@@ -12,8 +12,8 @@ spec:
   selector:
     matchLabels:
       app: web
-  replicas: 5
-  minReadySeconds: 5 # this is the time to wait until the pod is ready - related to rolling update and rollback
+  replicas: 10
+  minReadySeconds: 10 # this is the time to wait until the pod is ready - related to rolling update and rollback
   strategy:
     type: RollingUpdate # this is the default strategy related to changes in container image
     rollingUpdate:

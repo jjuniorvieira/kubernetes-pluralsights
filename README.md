@@ -29,3 +29,5 @@
 - `kubectl get deploy` check it out deployment status
 - `kubectl get rs` check it out replica set status
 - `kubectl get ep` list of endpoint
+- `kubectl rollout status deploy web-deploy` check rollout/update status
+- `kubectl rollout history deploy web-deploy` check rollout/update history 

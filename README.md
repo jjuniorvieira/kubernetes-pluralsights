@@ -13,6 +13,7 @@
 
 
 ## commmand list - k8s
+- `kubectl help | more`
 - `kubectl cluster-info`
 - `kubectl apply -f pod.yml` deploy a pod into a cluster
 - `kubectl get pods --watch`

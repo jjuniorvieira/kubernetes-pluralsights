@@ -16,6 +16,7 @@
 - `kubectl help | more`
 - `kubectl cluster-info`
 - `kubectl apply -f pod.yml` deploy a pod into a cluster
+- `kubectl get pods --all-namespaces`
 - `kubectl get pods --watch`
 - `kubectl get pods -o wide` this command show in each nodes the pods are running on
 - `kubectl get pods --show-labels`

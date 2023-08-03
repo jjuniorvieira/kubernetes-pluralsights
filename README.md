@@ -29,6 +29,7 @@
 - `kubectl delete svc hello-svc` delete svc object
 - `kubectl describe svc ps-nodeport`
 - `kubectl get deploy` check it out deployment status
+- `kubectl delete deploy web-deploy`
 - `kubectl get rs` check it out replica set status
 - `kubectl get ep` list of endpoint
 - `kubectl rollout status deploy web-deploy` check rollout/update status

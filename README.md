@@ -12,9 +12,10 @@
 - `docker image push juniorhc/getting-started-k8s:1.0 `
 
 
-## commmand list - k8s
+## kubectl commmand list
 - `kubectl help | more`
 - `kubectl cluster-info`
+- `kubectl config current-context`
 - `kubectl apply -f pod.yml` deploy a pod into a cluster
 - `kubectl get pods --all-namespaces`
 - `kubectl get pods --watch`

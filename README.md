@@ -31,7 +31,7 @@
 - `kubectl describe svc ps-nodeport`
 - `kubectl get deploy` check it out deployment status
 - `kubectl delete deploy web-deploy`
-- `kubectl create deployment myapp --image manojnair/myapp:v1` 
+- `kubectl create deployment myapp --image manojnair/myapp:v1` # creating deployment imperatively 
 - `kubectl get deployments`
 - `kubectl get rs` check it out replica set status
 - `kubectl get ep` list of endpoint

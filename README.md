@@ -31,7 +31,8 @@
 - `kubectl describe svc ps-nodeport`
 - `kubectl get deploy` check it out deployment status
 - `kubectl delete deploy web-deploy`
-- `kubectl create deployment myapp --image manojnair/myapp:v1` # creating deployment imperatively 
+- `kubectl create deployment myapp --image manojnair/myapp:v1` creating deployment imperatively 
+- `kubectl expose deployment myapp --type=LoadBalancer --port=80 --target-port=80` create / expose service type LB imperatively 
 - `kubectl get deployments`
 - `kubectl get rs` check it out replica set status
 - `kubectl get ep` list of endpoint

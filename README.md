@@ -32,6 +32,7 @@
 - `kubectl get deploy` check it out deployment status
 - `kubectl delete deploy web-deploy`
 - `kubectl create deployment myapp --image manojnair/myapp:v1` 
+- `kubectl get deployments`
 - `kubectl get rs` check it out replica set status
 - `kubectl get ep` list of endpoint
 - `kubectl rollout status deploy web-deploy` check rollout/update status

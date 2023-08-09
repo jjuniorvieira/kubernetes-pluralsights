@@ -34,6 +34,7 @@
 - `kubectl create deployment myapp --image manojnair/myapp:v1` creating deployment imperatively 
 - `kubectl expose deployment myapp --type=LoadBalancer --port=80 --target-port=80` create / expose service type LB imperatively 
 - `kubectl get deployments`
+- `kubectl scale deployment myapp --replicas=3` scale up
 - `kubectl get rs` check it out replica set status
 - `kubectl get ep` list of endpoint
 - `kubectl rollout status deploy web-deploy` check rollout/update status

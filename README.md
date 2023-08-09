@@ -16,6 +16,7 @@
 - `kubectl help | more`
 - `kubectl cluster-info`
 - `kubectl config current-context`
+- `kubectl get pods --all-namespaces`
 - `kubectl apply -f pod.yml` deploy a pod into a cluster
 - `kubectl get pods --all-namespaces`
 - `kubectl get pods --watch`

@@ -42,3 +42,4 @@
 - `kubectl rollout history deploy web-deploy` check rollout/update history 
 - `kubectl rollout history deployment/myapp`
 - `kubectl rollout undo deploy web-deploy --to-revision=1` rollback to specific revision, higher the revision number new it is
+- `kubectl set image deployment/myapp myapp=manojnair/myapp:v2 --record=true` update the app

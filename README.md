@@ -17,7 +17,7 @@
 - `kubectl cluster-info`
 - `kubectl config current-context`
 - `kubectl get pods --all-namespaces`
-- `kubectl apply -f pod.yml` deploy a pod into a cluster
+- `kubectl apply -f pod.yml` deploy a pod into a cluster. this is declarative way
 - `kubectl get pods --all-namespaces`
 - `kubectl get pods --watch`
 - `kubectl get pods -o wide` this command show in each nodes the pods are running on
@@ -33,6 +33,7 @@
 - `kubectl get deploy` check it out deployment status
 - `kubectl delete deploy web-deploy`
 - `kubectl create deployment myapp --image manojnair/myapp:v1` creating deployment imperatively 
+- `kubectl create -f myapp2.yml` creating deploy and svc in declarative way
 - `kubectl expose deployment myapp --type=LoadBalancer --port=80 --target-port=80` create / expose service type LB imperatively 
 - `kubectl get deployments`
 - `kubectl scale deployment myapp --replicas=3` scale up
